@@ -55,7 +55,7 @@ The "SplitEXR" functionality is also embedded into the keybinds file so you get 
 
 There is a custom PySide2 based Node Alignment tool that is embedded in the `keybinds_snippets.py` file. Paste this file's contents into the top of the sfx `scripts/keybinds.py` file and then restart Silhouette.
 
-You can use the Node Alignment tool when you are working in the sfx "Tree" view. Select several nodes and then press the "g" hotkey to display the Node Alignment floating window.
+You can use the Node Alignment tool when you are working in the sfx "Tree" view. Select several nodes and then press the "**g**" hotkey to display the Node Alignment floating window.
 
 Clicking the first "**X**" button in the window will close the floating view you don't want to use any of the buttons in the window.
 
