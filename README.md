@@ -1,5 +1,5 @@
 
-# SilhouetteFX Python Scripts - 2018-12-15 #
+# SilhouetteFX Python Scripts - 2018-12-27 #
 
 ---
 
@@ -59,4 +59,7 @@ You can use the Node Alignment tool when you are working in the sfx "Tree" view.
 
 Clicking the first "**X**" button in the window will close the floating view you don't want to use any of the buttons in the window.
 
-Last Revised 2018-12-15
+Here's a short video clip of the node alignment tools in action:  
+[https://www.youtube.com/watch?v=dMrfnLQZtMs](https://www.youtube.com/watch?v=dMrfnLQZtMs)
+
+Last Revised 2018-12-27
