@@ -584,7 +584,7 @@ def SaveByCSV():
 	import fx
 	import csv
 	
-	path = '/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/node_shape.csv'
+	path = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/node_shape.csv'
 	
 	# Prepare CSV writing
 	with open(path, 'wb') as fp:
@@ -670,7 +670,7 @@ def SnapDialog():
 	
 	buttonLabels = ['Align Vertical', 'Align Horizontal', 'Stack Horizontal', 'Stack Vertical', 'Distribute Spaces Horizontal', 'Distribute Spaces Vertical', 'CSV', 'Snap to Grid']
 	
-	iconFolder = '/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/icons/'
+	iconFolder = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/icons/'
 	
 	# Create the buttons
 	button = QPushButton(snapWindow)
