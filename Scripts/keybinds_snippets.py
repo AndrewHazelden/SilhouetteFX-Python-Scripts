@@ -14,7 +14,7 @@ def callMethod(func, *args, **kwargs):
 
 
 # -----------------------------------------
-# ACH MacOS keybinds Start - 2018-12-15
+# ACH MacOS keybinds Start - 2019-11-26
 # "g" hotkey runs a node alignment script
 # "r" hotkey runs a "Reveal in Finder" script
 # "tab" hotkey runs a "Send To > DJV View" script
@@ -533,7 +533,7 @@ def AlignByCSV():
 	import fx
 	import csv
 	
-	path = '/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/node_shape.csv'
+	path = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/node_shape.csv'
 	
 	tool = 'Align By CSV'
 	PrintStatus(tool)
@@ -739,8 +739,5 @@ def SnapDialog():
 fx.bind("g", SnapDialog)
 
 # -----------------------------------------
-# ACH keybinds End - 2018-12-15
+# ACH keybinds End - 2019-11-26
 # -----------------------------------------
-
-
-

@@ -1,4 +1,4 @@
-"""Encode Movie MP4 Script - V1.0 2018-12-15
+"""Encode Movie MP4 Script - V1.1 2019-11-26
 By Andrew Hazelden <andrew@andrewhazelden.com>
 ----------------------------------------------
 
@@ -14,22 +14,22 @@ Step 2. Run the "Actions > Encode Movie > MP4" menu item.
 
 Step 1. Open the Silhouette Script Actions folder using the following terminal command:
 
-open "/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/actions/"
+open "/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/"
 
 Step 2. Install this Python script by copying it to:
 
-/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/actions/EncodeMovieMP4.py
+/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/EncodeMovieMP4.py
 
 Step 3. Copy the provided Apple Compressor encoding presets folder named "compressor" to:
 
-/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/compressor
+/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/compressor
 
 The compressor folder is used as a container to neat and tidily hold your exported ".cmprstng" file.
 
 Step 4. Scroll down in this document and update that filepath and the name of the Apple Compressor exported ".cmprstng" preset file you want to use with the current "achEncodeMovie.py" script.
 
 	# Compressor preset
-	settings = '/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/compressor/MP4.cmprstng'
+	settings = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/compressor/MP4.cmprstng'
 
 Step 5. Restart SilhouetteFX to re-load the active scripts, and start creating new art, new possibilities, and making new creative visions come to life!
 
@@ -93,7 +93,7 @@ def EncodeMovie(path):
 	dir = os.path.dirname(path)
 	
 	# Compressor preset
-	settings = '/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/compressor/MP4.cmprstng'
+	settings = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/compressor/MP4.cmprstng'
 	
 	# Compressor Job name
 	batch = 'sfx+'

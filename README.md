@@ -1,5 +1,5 @@
 
-# SilhouetteFX Python Scripts - 2018-12-27 #
+# SilhouetteFX Python Scripts - v1.1 2019-11-26 #
 
 ---
 
@@ -62,4 +62,37 @@ Clicking the first "**X**" button in the window will close the floating view you
 Here's a short video clip of the node alignment tools in action:  
 [https://www.youtube.com/watch?v=dMrfnLQZtMs](https://www.youtube.com/watch?v=dMrfnLQZtMs)
 
-Last Revised 2018-12-27
+
+## <a name="install"></a>Install ##
+
+1. Download the contents of the SilhouetteFX-Python-Scripts repository.
+
+2. Open `Scripts` folder, and copy the `compressor` and `icons` resources to your SilhouetteFX `Ressources/scripts/` folder. On macOS that is located at:
+
+`/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/`
+
+3. Copy the .py scripts from inside the `scripts/actions/` folder into your SilhouetteFX `Ressources/scripts/actions/` folder. On macOS that is located at:
+
+`/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/`
+
+4. Open the `scripts/actions/keybinds_snippets.py` Python script in a programmer's text editor. This file has a snippet of custom code that provides drag and drop support, along with Trees view grid layout snapping tools. You need to add this content via copy/paste to the top of the SilhouetteFX's built-in `keybinds.py` file by replacing this text area with the new code:
+
+		import fx
+
+		#
+		# Helper function which returns a function that calls
+		# a specified method of an object, passing in the argument list.
+		# Used to replace 'lambda', which is being phased out
+		#
+		def callMethod(func, *args, **kwargs):
+			def _return_func():
+				return func(*args, **kwargs)
+			return _return_func
+
+SilhouetteFX's built-in `keybinds.py` file is located at:
+
+`/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/keybinds.py`
+
+**Note:** *It's a good idea to save a copy of your original `keybinds.py` file as `keybinds.bak` when you edit it.*
+
+Last Revised 2019-11-26

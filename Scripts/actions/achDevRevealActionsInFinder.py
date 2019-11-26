@@ -1,5 +1,5 @@
 """
-Reveal Actions in Finder - V1.0 2018-12-15
+Reveal Actions in Finder - V1.1 2019-11-26
 By Andrew Hazelden <andrew@andrewhazelden.com>
 ----------------------------------------------
 
@@ -16,11 +16,11 @@ Step 2. Run the "Actions > Developer > Reveal Actions in Finder" menu item.
 
 Step 1. Open the Silhouette Script Actions folder using the following terminal command:
 
-open "/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/actions/"
+open "/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/"
 
 Step 2. Install this Python script by copying it to:
 
-/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/actions/DevRevealActionsInFinder.py
+/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/DevRevealActionsInFinder.py
 
 Step 3. Restart SilhouetteFX to re-load the active scripts.
 """
@@ -35,7 +35,7 @@ def Command():
 	import os
 	import subprocess
 	
-	dir = '/Applications/SilhouetteFX/Silhouette v7/Silhouette.app/Contents/Resources/scripts/actions'
+	dir = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions'
 	
 	# Make the output filename
 	dest = dir + os.sep
