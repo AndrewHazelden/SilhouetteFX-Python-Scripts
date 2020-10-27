@@ -10,7 +10,7 @@ Web: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)
 
 ## <a name="overview"></a>Overview ##
 
-This is a collection of custom python scripts for [SilhouetteFX](http://www.silhouettefx.com/) v7+. These tools help to improve the sfx node based compositing experience and make the artist more productive.
+This is a collection of custom python scripts for [SilhouetteFX](http://www.silhouettefx.com/) v7.x. These tools help to improve the sfx node based compositing experience and make the artist more productive. (Note: These scripts haven't been updated for use in v2020 yet as the sfx python API is slighlty different.)
 
 
 ![SFX Logo](Docs/images/sfx-logo.png)
@@ -74,17 +74,9 @@ Here's a short video clip of the node alignment tools in action:
 
 `/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/`
 
-or
-
-`/Applications/SilhouetteFX/Silhouette 2020.5/Silhouette.app/Contents/Resources/scripts/`
-
 3. Copy the .py scripts from inside the `scripts/actions/` folder into your SilhouetteFX `Ressources/scripts/actions/` folder. On macOS that is located at:
 
 `/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/`
-
-or
-
-`/Applications/SilhouetteFX/Silhouette 2020.5/Silhouette.app/Contents/Resources/scripts/actions/`
 
 4. Open the `scripts/actions/keybinds_snippets.py` Python script in a programmer's text editor. This file has a snippet of custom code that provides drag and drop support, along with Trees view grid layout snapping tools. You need to add this content via copy/paste to the top of the SilhouetteFX's built-in `keybinds.py` file by replacing this text area with the new code:
 
@@ -104,9 +96,6 @@ SilhouetteFX's built-in `keybinds.py` file is located at:
 
 `/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/keybinds.py`
 
-or
-
-`/Applications/SilhouetteFX/Silhouette 2020.5/Silhouette.app/Contents/Resources/scripts/keybinds.py`
 
 **Note:** *It's a good idea to save a copy of your original `keybinds.py` file as `keybinds.bak` when you edit it.*
 
