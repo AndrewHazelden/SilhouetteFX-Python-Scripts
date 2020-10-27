@@ -1,5 +1,5 @@
 
-# SilhouetteFX Python Scripts - v1.1 2019-11-26 #
+# SilhouetteFX Python Scripts - v1.1 2020-10-27 #
 
 ---
 
@@ -49,6 +49,9 @@ This is a collection of custom python scripts for [SilhouetteFX](http://www.silh
 
 The "SplitEXR" functionality is also embedded into the keybinds file so you get auto-magic drag-and-drop EXR channel expansion when you drag an EXR image from your desktop into the SilhouetteFX tree "nodes view" area.
 
+Here's a short video clip of the drag-and-drop plus the SplitEXR tools in action:  
+[https://www.youtube.com/watch?v=is82luQSf7A](https://www.youtube.com/watch?v=is82luQSf7A)
+
 ## <a name="node-alignment"></a>Node Alignment Script ##
 
 ![Node Alignment](Docs/images/sfx-pyside-align-nodes-window.png)
@@ -71,9 +74,17 @@ Here's a short video clip of the node alignment tools in action:
 
 `/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/`
 
+or
+
+`/Applications/SilhouetteFX/Silhouette 2020.5/Silhouette.app/Contents/Resources/scripts/`
+
 3. Copy the .py scripts from inside the `scripts/actions/` folder into your SilhouetteFX `Ressources/scripts/actions/` folder. On macOS that is located at:
 
 `/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/`
+
+or
+
+`/Applications/SilhouetteFX/Silhouette 2020.5/Silhouette.app/Contents/Resources/scripts/actions/`
 
 4. Open the `scripts/actions/keybinds_snippets.py` Python script in a programmer's text editor. This file has a snippet of custom code that provides drag and drop support, along with Trees view grid layout snapping tools. You need to add this content via copy/paste to the top of the SilhouetteFX's built-in `keybinds.py` file by replacing this text area with the new code:
 
@@ -93,6 +104,35 @@ SilhouetteFX's built-in `keybinds.py` file is located at:
 
 `/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/keybinds.py`
 
+or
+
+`/Applications/SilhouetteFX/Silhouette 2020.5/Silhouette.app/Contents/Resources/scripts/keybinds.py`
+
 **Note:** *It's a good idea to save a copy of your original `keybinds.py` file as `keybinds.bak` when you edit it.*
 
-Last Revised 2019-11-26
+5. Edit the `keybinds.py` file and change the entries below to point to the correct paths for your current SilhouetteFX install:
+
+SaveByCSV() / AlignByCSV() Functions:
+
+`path = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/node_shape.csv'`
+
+SnapDialog() Function:
+
+`iconFolder = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/icons/'`
+
+runDJV() Function:
+
+`cmd = "/Applications/DJV.app/Contents/Resources/bin/djv_view.sh"`
+
+## <a name="screenshots"></a>Screenshots ##
+
+![Developer Menu](Docs/images/sfx-actions-menu-developer.png)
+
+![Encode Menu](Docs/images/sfx-actions-menu-encode-movie.png)
+
+![Send To Menu](Docs/images/sfx-actions-menu-send-to.png)
+
+![Actions Menu](Docs/images/sfx-actions-menu-tools.png)
+
+
+Last Revised 2020-10-27
