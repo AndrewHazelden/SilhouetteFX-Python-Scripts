@@ -12,7 +12,7 @@ The badly compressed output lets you see visually and know what aspects of your 
 
 A "YouTube Quality Preview" movie output created using this script should *never ever* be used to deliver footage or content to *anyone*. It looks, and is really terrible quality output. That's intentional. This is a preview tool to previz your movie going up to YouTube, and then being viewed on a typical consumer's system with run of the mill hardware and network bandwidth,
 
-The reason this script exists at all is to let you, the comp artist, the content creator, check for and anticipate the horrors of MP4 video blocking, glitches, banding, temporal stuttering, or other codec issue you would not normally see immediatly. This puts you in control of QA processes for video encoding. To allow *YOU*, the original artist to decide on the appropriate tweaks and changes that might need to happen vs allowing someone else to dictate that to you days later after you hand them simply beautiful looking 16-bit half-float EXR image sequences that look fine and are fine.
+The reason this script exists at all is to let you, the comp artist, the content creator, check for and anticipate the horrors of MP4 video blocking, glitches, banding, temporal stuttering, or other codec issue you would not normally see immediately. This puts you in control of QA processes for video encoding. To allow *YOU*, the original artist to decide on the appropriate tweaks and changes that might need to happen vs allowing someone else to dictate that to you days later after you hand them simply beautiful looking 16-bit half-float EXR image sequences that look fine and are fine.
 
 It is video encoding for the web that potentially breaks the creative intent you want. And now you can know what that process will do to your art while still inside of SilhouetteFX . :) 
 
@@ -47,7 +47,7 @@ The compressor folder is used as a container to neat and tidily hold your export
 Step 4. Scroll down in this document and update that filepath and the name of the Apple Compressor exported ".cmprstng" preset file you want to use with the current "achEncodeMovie.py" script.
 
 	# Compressor preset
-	settings = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/compressor/YouTubeLowQualityPrevie.cmprstng'
+	settings = '/Applications/SilhouetteFX/Silhouette v7.5/Silhouette.app/Contents/Resources/scripts/actions/compressor/YouTubeLowQualityPreview.cmprstng'
 
 Step 5. Restart SilhouetteFX to re-load the active scripts, and start creating new art, new possibilities, and making new creative visions come to life!
 
@@ -56,7 +56,7 @@ Step 5. Restart SilhouetteFX to re-load the active scripts, and start creating n
 Apple Compressor's CLI mode expects your image sequence to be rendered into a new, custom output folder. The files present in that folder, in linear order will be turned into your movie file.
 
 Compressor can work with DWAA encoded EXRs that have RGBA data in them. You will have to use SilhouetteFX and its Render Session mode to bounce out a temporary RGBA channel EXR sequence if you want to encode an MP4 or ProRes movie from it using this script.
-.
+
 """
 
 # Import the modules
